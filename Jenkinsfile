@@ -522,6 +522,7 @@ tools {
                     }
 
                     echo "Rollback image: ${rollbackImage}"
+                    env.ROLLBACK_IMAGE = rollbackImage
 
                     bat '''
                         echo Removing failed candidate...
@@ -538,7 +539,7 @@ tools {
                           -e APP_VERSION=rollback ^
                           -e APP_ENV=%ENVIRONMENT% ^
                           -e APP_HEALTHY=true ^
-                          %PREVIOUS_IMAGE%
+                          %ROLLBACK_IMAGE%
                     '''
 
                     echo "Rollback container started."
