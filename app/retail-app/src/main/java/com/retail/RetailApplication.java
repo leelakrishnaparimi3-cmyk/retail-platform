@@ -33,22 +33,16 @@ public class RetailApplication {
 
         return "UP";
     }
-
-    @GetMapping("/payment")
-    public String payment() {
-        return "PAYMENT FIXED - Payment processing is working correctly";
-    }
     
-    @GetMapping("/products")
+    @GetMapping("/payment")
+public String payment() {
+    return "PAYMENT FIXED - Payment processing is working correctly - Version 4.2.1";
+}
+
+@GetMapping("/products")
 public String products() {
     return "Product catalog is available";
 }
-
-@GetMapping("/orders")
-public String orders() {
-    return "Order management is available";
-}
-
     @GetMapping("/version")
     public String version() {
         return getVersion();
