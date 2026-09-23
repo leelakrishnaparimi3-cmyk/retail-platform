@@ -126,7 +126,7 @@ tools {
             steps {
                 bat '''
                     echo Running Maven tests...
-                    mvn -B clean test package
+                    bat 'cd app\\retail-app && mvn -B clean test package'
                 '''
             }
         }
