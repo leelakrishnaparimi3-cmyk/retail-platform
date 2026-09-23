@@ -292,7 +292,7 @@ tools {
                             break
                         }
 
-                        bat 'timeout /t 5 /nobreak >nul'
+                        powershell -NoProfile -Command "Start-Sleep -Seconds 5"
                     }
 
                     if (!healthy) {
