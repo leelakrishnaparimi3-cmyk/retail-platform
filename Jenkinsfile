@@ -292,7 +292,7 @@ tools {
                             break
                         }
 
-                        powershell -NoProfile -Command "Start-Sleep -Seconds 5"
+                        bat 'powershell -NoProfile -Command "Start-Sleep -Seconds 5"'
                     }
 
                     if (!healthy) {
