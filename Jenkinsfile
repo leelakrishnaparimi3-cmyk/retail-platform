@@ -126,7 +126,7 @@ tools {
             steps {
                 bat '''
                     echo Running Maven tests...
-                    bat 'cd app\\retail-app && mvn -B clean test package'
+                    cd app\\retail-app && mvn -B clean test package
                 '''
             }
         }
@@ -377,7 +377,7 @@ tools {
                             break
                         }
 
-                        bat 'timeout /t 5 /nobreak >nul'
+                        bat 'powershell -NoProfile -Command "Start-Sleep -Seconds 5"'
                     }
 
                     if (!healthy) {
@@ -464,7 +464,7 @@ tools {
                             break
                         }
 
-                        bat 'timeout /t 5 /nobreak >nul'
+                        bat 'powershell -NoProfile -Command "Start-Sleep -Seconds 5"'
                     }
 
                     if (!healthy) {
@@ -563,7 +563,7 @@ tools {
                             break
                         }
 
-                        bat 'timeout /t 5 /nobreak >nul'
+                        bat 'powershell -NoProfile -Command "Start-Sleep -Seconds 5"'
                     }
 
                     if (rollbackHealthy) {
