@@ -27,7 +27,9 @@ pipeline {
             description: 'Must be YES for PRODUCTION deployment.'
         )
     }
-
+tools {
+    maven 'Maven-3.9.16'
+}
     environment {
         APP_NAME = 'retail-app'
         PROD_CONTAINER = 'retail-app-prod'
