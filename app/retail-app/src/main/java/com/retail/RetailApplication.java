@@ -44,6 +44,11 @@ public String products() {
     return "Product catalog is available";
 }
 
+@GetMapping("/orders")
+public String orders() {
+    return "Order management is available";
+}
+
     @GetMapping("/version")
     public String version() {
         return getVersion();
