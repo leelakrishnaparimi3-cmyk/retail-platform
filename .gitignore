@@ -1,0 +1,15 @@
+@"
+# Maven
+**/target/
+
+# IDE
+.vscode/
+.idea/
+
+# Java
+*.class
+
+# OS
+.DS_Store
+Thumbs.db
+"@ | Set-Content .gitignore
