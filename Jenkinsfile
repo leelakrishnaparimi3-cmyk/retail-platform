@@ -37,6 +37,7 @@ tools {
         DOCKER_NETWORK = 'retail-network'
         PROD_PORT = '8081'
         UAT_PORT = '8082'
+        CANDIDATE_PORT = '8083'
     }
 
     stages {
