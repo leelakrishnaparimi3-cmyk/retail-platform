@@ -38,6 +38,11 @@ public class RetailApplication {
     public String payment() {
         return "PAYMENT FIXED - Payment processing is working correctly";
     }
+    
+    @GetMapping("/products")
+public String products() {
+    return "Product catalog is available";
+}
 
     @GetMapping("/version")
     public String version() {
