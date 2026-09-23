@@ -28,7 +28,7 @@ pipeline {
         )
     }
 tools {
-    maven 'Maven-3.9.16'
+    maven 'Maven'
 }
     environment {
         APP_NAME = 'retail-app'
